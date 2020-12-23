@@ -1,0 +1,4 @@
+
+../DS_Job_Statistics GPVAL EXT_005040_DEFRD_CONSOLDATE_BEN_FILE.MNTHLY ../Prop/GPVAL.dbctrl ../Log LOG_APPEND
+
+

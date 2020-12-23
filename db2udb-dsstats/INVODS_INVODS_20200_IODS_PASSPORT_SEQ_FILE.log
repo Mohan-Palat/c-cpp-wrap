@@ -1,0 +1,182 @@
+
+<BOL>
+[2017-10-28 13:12:46][FYI] DS Load Status Log for Version: 3.6U
+[2017-10-28 13:12:46][FYI] This File: ../Log/INVODS_INVODS_20200_IODS_PASSPORT_SEQ_FILE.log
+[2017-10-28 13:12:46][FYI] Project Name: INVODS
+[2017-10-28 13:12:46][FYI] Job Name: INVODS_20200_IODS_PASSPORT_SEQ_FILE
+[2017-10-28 13:12:46][FYI] DB Control File is: ../Prop/DS_LoadStats.dbctrl
+[2017-10-28 13:12:46][DBG] SQLAllocHandle(void constructor).
+[2017-10-28 13:12:46][DBG] Set SQLSetEnvAttr(ODBC Version 3.x).
+[2017-10-28 13:12:46][DBG] Connecting to 'EDW2' User 'rsetldn'.
+[2017-10-28 13:12:46][DBG] Setting Debug Mode to 'FALSE'
+[2017-10-28 13:12:46][FYI] Load ID (BIGINT) for current run: 2017102813124650540
+[2017-10-28 13:12:46][FYI] Loading Project List........
+[2017-10-28 13:12:46][FYI] Project Count = 31
+[2017-10-28 13:12:46][FYI] Opening Project: INVODS
+[2017-10-28 13:12:46][FYI] API Call DSOpenProject(33280416) Successful
+[2017-10-28 13:12:46][FYI] Loading Job List........
+[2017-10-28 13:12:46][FYI] Job Count = 674
+[2017-10-28 13:12:46][FYI] Opening Job: INVODS_20200_IODS_PASSPORT_SEQ_FILE
+[2017-10-28 13:12:46][FYI] API Call DSOpenJob(33494560) Successful
+[2017-10-28 13:12:46][FYI] Loading Stage List........
+[2017-10-28 13:12:46][FYI] Stage Count = 12
+[2017-10-28 13:12:46][FYI] 0001: Funnel_stg
+[2017-10-28 13:12:46][FYI] 0002: xfm_seq_file
+[2017-10-28 13:12:46][FYI] 0003: Col_export_detail
+[2017-10-28 13:12:46][FYI] 0004: Aggregator_Count
+[2017-10-28 13:12:46][FYI] 0005: Funnel_detail_file
+[2017-10-28 13:12:46][FYI] 0006: seq_file
+[2017-10-28 13:12:46][FYI] 0007: join_dummy
+[2017-10-28 13:12:46][FYI] 0008: Xfm_trailer_mapping
+[2017-10-28 13:12:46][FYI] 0009: Row_Generator
+[2017-10-28 13:12:46][FYI] 0010: Xfm_header_mapping
+[2017-10-28 13:12:46][FYI] 0011: Trl_Row_Generator
+[2017-10-28 13:12:46][FYI] 0012: Transformer_30
+[2017-10-28 13:12:46][FYI] Processing Stage 0001: Funnel_stg
+[2017-10-28 13:12:46][FYI]   Stage Type:'PxFunnel'
+[2017-10-28 13:12:46][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:46][FYI]   Status:[2]
+[2017-10-28 13:12:46][FYI]   Link 0001: Lnk_ds_Inv_fee
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 0
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Ds_Inv_Fee_Type'
+[2017-10-28 13:12:46][FYI]   Link 0002: Lnk_ds_Red_Fee
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 324
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Ds_Red_Fee'
+[2017-10-28 13:12:46][FYI]   Link 0003: Lnk_ds_Purchase_blk
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 438
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Ds_Purchase_Blk'
+[2017-10-28 13:12:46][FYI]   Link 0004: Lnk_ds_price_st_log_del
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 0
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Ds_Price_structure_log_del'
+[2017-10-28 13:12:46][FYI]   Link 0005: Lnk_ds_xref_id
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 36400
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Ds_Xref_Price_Id'
+[2017-10-28 13:12:46][FYI]   Link 0006: Lnk_ds_inv_fee_log_del
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 0
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Ds_Inv_Fee_log_del'
+[2017-10-28 13:12:46][FYI]   Link 0007: Lnk_ds_red_fee_log_del
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 0
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Ds_Red_Fee_Log_del'
+[2017-10-28 13:12:46][FYI]   Link 0008: Lnk_ds_price_structure
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 59277
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Ds_Price_Structure'
+[2017-10-28 13:12:46][FYI]   Link 0009: Lnk_ds_Data_history
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 68767
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Ds_Data_History'
+[2017-10-28 13:12:46][FYI]   Link 0010: Lnk_Join
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 165206
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'xfm_seq_file'
+[2017-10-28 13:12:46][FYI] Processing Stage 0002: xfm_seq_file
+[2017-10-28 13:12:46][FYI]   Stage Type:'CTransformerStage'
+[2017-10-28 13:12:46][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:46][FYI]   Status:[2]
+[2017-10-28 13:12:46][FYI]   Link 0001: Lnk_Join
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 165206
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Funnel_stg'
+[2017-10-28 13:12:46][FYI]   Link 0002: Lnk_xfm_detail_record
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 165206
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Col_export_detail'
+[2017-10-28 13:12:46][FYI]   Link 0003: Lnk_trailer
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 165206
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Aggregator_Count'
+[2017-10-28 13:12:46][FYI] Processing Stage 0003: Col_export_detail
+[2017-10-28 13:12:46][FYI]   Stage Type:'PxColumnExport'
+[2017-10-28 13:12:46][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:46][FYI]   Status:[2]
+[2017-10-28 13:12:46][FYI]   Link 0001: Lnk_xfm_detail_record
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 165206
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'xfm_seq_file'
+[2017-10-28 13:12:46][FYI]   Link 0002: Lnk_detail_funnel
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 165206
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Funnel_detail_file'
+[2017-10-28 13:12:46][FYI] Processing Stage 0004: Aggregator_Count
+[2017-10-28 13:12:46][FYI]   Stage Type:'PxAggregator'
+[2017-10-28 13:12:46][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:46][FYI]   Status:[2]
+[2017-10-28 13:12:46][FYI]   Link 0001: Lnk_trailer
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 165206
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'xfm_seq_file'
+[2017-10-28 13:12:46][FYI]   Link 0002: Lnk_xfm_trailer
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'join_dummy'
+[2017-10-28 13:12:46][FYI] Processing Stage 0005: Funnel_detail_file
+[2017-10-28 13:12:46][FYI]   Stage Type:'PxFunnel'
+[2017-10-28 13:12:46][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:46][FYI]   Status:[2]
+[2017-10-28 13:12:46][FYI]   Link 0001: lnk_header
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Xfm_header_mapping'
+[2017-10-28 13:12:46][FYI]   Link 0002: Lnk_detail_funnel
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 165206
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Col_export_detail'
+[2017-10-28 13:12:46][FYI]   Link 0003: Lnk_trailer_recs
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Xfm_trailer_mapping'
+[2017-10-28 13:12:46][FYI]   Link 0004: Lnk_funnel_file
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 165208
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'seq_file'
+[2017-10-28 13:12:46][FYI] Processing Stage 0006: seq_file
+[2017-10-28 13:12:46][FYI]   Stage Type:'PxSequentialFile'
+[2017-10-28 13:12:46][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:46][FYI]   Status:[2]
+[2017-10-28 13:12:46][FYI]   Link 0001: Lnk_funnel_file
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 165208
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Funnel_detail_file'
+[2017-10-28 13:12:46][FYI] Processing Stage 0007: join_dummy
+[2017-10-28 13:12:46][FYI]   Stage Type:'PxJoin'
+[2017-10-28 13:12:46][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:46][FYI]   Status:[2]
+[2017-10-28 13:12:46][FYI]   Link 0001: Lnk_row_gen_join
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Transformer_30'
+[2017-10-28 13:12:46][FYI]   Link 0002: Lnk_xfm_trailer
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Aggregator_Count'
+[2017-10-28 13:12:46][FYI]   Link 0003: Lnk_Trl_Xfm
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Xfm_trailer_mapping'
+[2017-10-28 13:12:46][FYI] Processing Stage 0008: Xfm_trailer_mapping
+[2017-10-28 13:12:46][FYI]   Stage Type:'CTransformerStage'
+[2017-10-28 13:12:46][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:46][FYI]   Status:[2]
+[2017-10-28 13:12:46][FYI]   Link 0001: Lnk_Trl_Xfm
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'join_dummy'
+[2017-10-28 13:12:46][FYI]   Link 0002: Lnk_trailer_recs
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Funnel_detail_file'
+[2017-10-28 13:12:46][FYI] Processing Stage 0009: Row_Generator
+[2017-10-28 13:12:46][FYI]   Stage Type:'PxRowGenerator'
+[2017-10-28 13:12:46][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:46][FYI]   Status:[2]
+[2017-10-28 13:12:46][FYI]   Link 0001: xfm_header
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Xfm_header_mapping'
+[2017-10-28 13:12:46][FYI] Processing Stage 0010: Xfm_header_mapping
+[2017-10-28 13:12:46][FYI]   Stage Type:'CTransformerStage'
+[2017-10-28 13:12:46][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:46][FYI]   Status:[2]
+[2017-10-28 13:12:46][FYI]   Link 0001: xfm_header
+[2017-10-28 13:12:46][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:46][FYI]     Linked Stage = 'Row_Generator'
+[2017-10-28 13:12:47][FYI]   Link 0002: lnk_header
+[2017-10-28 13:12:47][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:47][FYI]     Linked Stage = 'Funnel_detail_file'
+[2017-10-28 13:12:47][FYI] Processing Stage 0011: Trl_Row_Generator
+[2017-10-28 13:12:47][FYI]   Stage Type:'PxRowGenerator'
+[2017-10-28 13:12:47][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:47][FYI]   Status:[2]
+[2017-10-28 13:12:47][FYI]   Link 0001: Lnk_xfm
+[2017-10-28 13:12:47][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:47][FYI]     Linked Stage = 'Transformer_30'
+[2017-10-28 13:12:47][FYI] Processing Stage 0012: Transformer_30
+[2017-10-28 13:12:47][FYI]   Stage Type:'CTransformerStage'
+[2017-10-28 13:12:47][FYI]   Time:'2017-10-20 09:07:28.000' to '2017-10-20 09:07:29.000'
+[2017-10-28 13:12:47][FYI]   Status:[2]
+[2017-10-28 13:12:47][FYI]   Link 0001: Lnk_xfm
+[2017-10-28 13:12:47][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:47][FYI]     Linked Stage = 'Trl_Row_Generator'
+[2017-10-28 13:12:47][FYI]   Link 0002: Lnk_row_gen_join
+[2017-10-28 13:12:47][FYI]     Link Rowcount = 1
+[2017-10-28 13:12:47][FYI]     Linked Stage = 'join_dummy'
+<EOL>

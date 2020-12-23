@@ -1,0 +1,23 @@
+# U\
+clear
+
+# /usr/lib64/libodbc.so
+export DB2PATH=/usr
+export EXTRA_C_FLAGS=
+export EXTRA_LFLAG="-Wl,-rpath,$DB2PATH/lib64"
+export DSAPIPATH=/opt/IBM/InformationServer/Server/DSEngine
+
+gcc $EXTRA_C_FLAGS -I$DB2PATH/include -c DB2Server.cpp
+gcc $EXTRA_C_FLAGS -I$DB2PATH/include -c Log.cpp
+gcc $EXTRA_C_FLAGS -I$DB2PATH/include -c Utils.cpp
+gcc $EXTRA_C_FLAGS -I$DB2PATH/include -I$DSAPIPATH/include -c DsApiPru.cpp
+gcc $EXTRA_C_FLAGS -I$DB2PATH/include -I$DSAPIPATH/include -c DSAPI3.CPP
+
+gcc $EXTRA_C_FLAGS -lodbc  -lstdc++ -o DS_Job_Statistics \
+             DSAPI3.o DB2Server.o Log.o DsApiPru.o Utils.o \
+                 -L$DSAPIPATH/lib -lvmdsapi \
+                 -L$DB2PATH/lib64 -lodbc
+
+# Add for detailed log by the linker
+# -Xlinker --verbose  \
+

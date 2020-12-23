@@ -1,0 +1,36 @@
+
+<BOL>
+[2019-12-19 09:05:52][FYI] DS Load Status Log for Version: 3.6U
+[2019-12-19 09:05:52][FYI] This File: ../Log/GPVAL_EXT_005040_DEFRD_CONSOLDATE_BEN_FILE.MNTHLY.log
+[2019-12-19 09:05:52][FYI] Project Name: GPVAL
+[2019-12-19 09:05:52][FYI] Job Name: EXT_005040_DEFRD_CONSOLDATE_BEN_FILE.MNTHLY
+[2019-12-19 09:05:52][FYI] DB Control File is: ../Prop/GPVAL.dbctrl
+[2019-12-19 09:05:52][DBG] SQLAllocHandle(void constructor).
+[2019-12-19 09:05:52][DBG] Set SQLSetEnvAttr(ODBC Version 3.x).
+[2019-12-19 09:05:52][DBG] Connecting to 'GPVAL_DEV_MGR4' User 'gpval_dbo_id'.
+[2019-12-19 09:05:52][DBG] Setting Debug Mode to 'FALSE'
+[2019-12-19 09:05:52][FYI] Load ID (BIGINT) for current run: 2019121909055244626
+[2019-12-19 09:05:52][FYI] Loading Project List........
+[2019-12-19 09:05:52][FYI] Project Count = 34
+[2019-12-19 09:05:52][FYI] Opening Project: GPVAL
+[2019-12-19 09:05:52][FYI] API Call DSOpenProject(38343600) Successful
+[2019-12-19 09:05:52][FYI] Loading Job List........
+[2019-12-19 09:05:52][FYI] Job Count = 160
+[2019-12-19 09:05:52][FYI] Opening Job: EXT_005040_DEFRD_CONSOLDATE_BEN_FILE.MNTHLY
+[2019-12-19 09:05:52][FYI] API Call DSOpenJob(38271936) Successful
+[2019-12-19 09:05:52][FYI] Loading Stage List........
+[2019-12-19 09:05:52][FYI] Stage Count = 1
+[2019-12-19 09:05:52][FYI] 0001: srt_RmvDups
+[2019-12-19 09:05:52][FYI] Processing Stage 0001: srt_RmvDups
+[2019-12-19 09:05:52][FYI]   Stage Type:'PxSort'
+[2019-12-19 09:05:52][FYI]   Time:'2019-03-15 04:13:43.000' to '2019-03-15 04:13:45.000'
+[2019-12-19 09:05:52][FYI]   Status:[2]
+[2019-12-19 09:05:52][FYI]   Link 0001: lnk_gpvalbenfilterdef_input
+[2019-12-19 09:05:52][FYI]     Link Rowcount = 297924
+[2019-12-19 09:05:52][FYI]     Linked Stage = 'Ds_GpvalBenFilterDef'
+[2019-12-19 09:05:52][FYI]   Link 0002: lnk_srt_output
+[2019-12-19 09:05:52][FYI]     Link Rowcount = 249865
+[2019-12-19 09:05:52][FYI]     Linked Stage = 'Ds_GpvalBenFilterDefUpdate'
+<EOL>
+
+
